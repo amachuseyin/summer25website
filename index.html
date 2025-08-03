@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> <!-- The class is removed from here -->
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +9,12 @@
 
     <!-- This script runs immediately to set the theme and prevent transitions on load -->
     <script>
-      (function() {
-        const theme = localStorage.getItem('theme') || 'light';
-        document.documentElement.className = theme;
-        // Add a class to disable transitions during load
-        document.documentElement.classList.add('no-transition');
-      })();
+        (function() {
+            const theme = localStorage.getItem('theme') || 'light';
+            document.documentElement.className = theme;
+            // Add a class to disable transitions during load
+            document.documentElement.classList.add('no-transition');
+        })();
     </script>
 </head>
 <body class="antialiased">
@@ -38,6 +38,7 @@
         <header class="mb-16">
             <div class="text-center">
                 <h1 class="text-4xl md:text-5xl font-bold text-stone-800">Huseyin Amac</h1>
+                <!-- Added phonetic transcription below the name -->
                 <span class="text-xs font-light text-stone-400">/hyˈsejin aˈmat͡ʃ/</span>
                 <p class="text-lg mt-2 text-stone-500 font-sans">Intelligence Systems Engineering, B.S.</p>
             </div>
