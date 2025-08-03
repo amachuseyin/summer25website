@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Removed class="light" from here -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huseyin Amac - Skills</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- This script runs immediately to set the theme and prevent transitions on load -->
+    <script>
+      (function() {
+        const theme = localStorage.getItem('theme') || 'light';
+        // Add the theme class ('light' or 'dark')
+        document.documentElement.classList.add(theme);
+        // Also add a class to disable transitions during load
+        document.documentElement.classList.add('no-transition');
+      })();
+    </script>
+    
+    <style>
+        /* Additional styles for skill sub-boxes */
+        .skill-box {
+            border: 1px solid #e7e5e4; /* stone-200 */
+            border-radius: 0.75rem;
+            padding: 1rem;
+            transition: all 0.2s ease-in-out;
+        }
+        .skill-box:hover {
+            border-color: #d6d3d1; /* stone-300 */
+            transform: translateY(-2px);
+        }
+        .dark .skill-box {
+            border-color: #44403c; /* stone-700 */
+        }
+        .dark .skill-box:hover {
+            border-color: #57534e; /* stone-600 */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="main-container">
+        
+        <!-- Party Mode Toggle -->
+        <button id="party-mode-toggle" aria-label="Toggle party mode">
+            <div class="sphere">
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+        </button>
+
+        <button id="theme-switcher" aria-label="Toggle theme">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" /></svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" /></svg>
+        </button>
+
+        <header class="mb-16">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-stone-800">Huseyin Amac</h1>
+                <p class="text-lg mt-2 text-stone-500 font-sans">Intelligence Systems Engineering, B.S.</p>
+            </div>
+            <nav class="hidden md:flex items-center justify-center space-x-6 mt-12">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="experience.html" class="nav-link">Experience</a>
+                <a href="skills.html" class="nav-link active">Skills</a>
+                <a href="resume.html" class="nav-link">Resume</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+            </nav>
+            <div class="md:hidden text-center mt-8">
+                <button id="menu-btn" class="btn-mono">Menu</button>
+            </div>
+            <nav id="mobile-menu" class="hidden md:hidden mt-4 text-center space-y-2">
+                <a href="index.html" class="block py-2 nav-link">Home</a>
+                <a href="portfolio.html" class="block py-2 nav-link">Portfolio</a>
+                <a href="experience.html" class="block py-2 nav-link">Experience</a>
+                <a href="skills.html" class="block py-2 nav-link active">Skills</a>
+                <a href="resume.html" class="block py-2 nav-link">Resume</a>
+                <a href="blog.html" class="block py-2 nav-link">Blog</a>
+            </nav>
+        </header>
+
+        <main class="space-y-12">
+            <div class="content-item">
+                <h2 class="section-heading">Technical Skills</h2>
+                <p class="text-stone-500 mb-6">Here is a comprehensive list of my technical skills, covering software, programming languages, and various tools I've mastered throughout my academic and professional journey.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="skill-box">
+                        <h3 class="text-lg font-bold text-stone-800">Radiation Testing</h3>
+                        <p class="text-stone-500 text-sm mt-1">Experienced in performing and analyzing <strong>radiation tests</strong> for various applications.</p>
+                    </div>
+                    <div class="skill-box">
+                        <h3 class="text-lg font-bold text-stone-800">Cadence & Ocean</h3>
+                        <p class="text-stone-500 text-sm mt-1">Proficient in <strong>Cadence software</strong> and <strong>Ocean scripting</strong> for circuit design and simulation.</p>
+                    </div>
+                    <div class="skill-box">
+                        <h3 class="text-lg font-bold text-stone-800">Python & Pandas</h3>
+                        <p class="text-stone-500 text-sm mt-1">Skilled in <strong>Python</strong> programming for data analysis, using libraries like <strong>Pandas</strong> for data manipulation.</p>
+                    </div>
+                    <div class="skill-box">
+                        <h3 class="text-lg font-bold text-stone-800">Anaconda & Jupyter</h3>
+                        <p class="text-stone-500 text-sm mt-1">Experienced in using <strong>Anaconda</strong> environments and <strong>Jupyter Notebooks</strong> for data science projects.</p>
+                    </div>
+                     <div class="skill-box">
+                        <h3 class="text-lg font-bold text-stone-800">C Programming</h3>
+                        <p class="text-stone-500 text-sm mt-1">Experienced in using <strong>C programming language</strong> to develop educational games and interactive coding solutions.</p>
+                    </div>
+                    <div class="skill-box">
+                        <h3 class="text-lg font-bold text-stone-800">GitHub & Linux</h3>
+                        <p class="text-stone-500 text-sm mt-1">Proficient in version control with <strong>GitHub</strong> and working in <strong>Linux-based environments</strong>.</p>
+                    </div>
+                    <div class="skill-box">
+                        <h3 class="text-lg font-bold text-stone-800">Data Visualization</h3>
+                        <p class="text-stone-500 text-sm mt-1">Using <strong>Seaborn</strong>, <strong>Plotly</strong>, and <strong>Matplotlib</strong> for effective graphical representation.</p>
+                    </div>
+                    <div class="skill-box">
+                        <h3 class="text-lg font-bold text-stone-800">Adobe Creative Cloud</h3>
+                        <p class="text-stone-500 text-sm mt-1">Skilled in <strong>Photoshop</strong>, <strong>Illustrator</strong>, <strong>Premiere Pro</strong>, and <strong>XD</strong> for creative design.</p>
+                    </div>
+                    <div class="skill-box">
+                        <h3 class="text-lg font-bold text-stone-800">3D Modeling & Fabrication</h3>
+                        <p class="text-stone-500 text-sm mt-1">Experienced in <strong>Fusion-360</strong>, <strong>PrucaSlicer</strong>, and <strong>Trotec Speedy 500</strong> for 3D modeling and fabrication tasks.</p>
+                    </div>
+                    <div class="skill-box">
+                        <h3 class="text-lg font-bold text-stone-800">LogicPro</h3>
+                        <p class="text-stone-500 text-sm mt-1">Proficient in <strong>LogicPro</strong> for audio editing and production.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content-item">
+                <h2 class="section-heading">Certificates</h2>
+                <div class="space-y-4 text-stone-500">
+                    <div>
+                        <p class="font-bold">Responsible Conduct of Research for Engineers</p>
+                        <p class="text-sm">Issued by: Collaborative Institutional Training Initiative | Jan 2024</p>
+                    </div>
+                    <div>
+                        <p class="font-bold">CITI Export Controls Course</p>
+                        <p class="text-sm">Issued by: Collaborative Institutional Training Initiative | Jan 2024</p>
+                    </div>
+                     <div>
+                        <p class="font-bold">Mental Health First Aid Training</p>
+                        <p class="text-sm">Issued by: National Council for Mental Wellbeing | May 2024</p>
+                    </div>
+                    <div>
+                        <p class="font-bold">Luddy Makerspace Safety Training</p>
+                        <p class="text-sm">Issued by: Luddy School of Informatics, Computing and Engineering | Oct 2023</p>
+                    </div>
+                     <div>
+                        <p class="font-bold">Fire Safety & Extinguisher Training 2024-2026</p>
+                        <p class="text-sm">Issued by: Indiana University Office of Insurance, Loss Control & Claims | Sep 2024</p>
+                    </div>
+                </div>
+            </div>
+             <div class="content-item text-center">
+                <h2 class="section-heading">Career Development Plan</h2>
+                <p class="text-stone-500 mb-4">I want to focus on specializing in microelectronics, with a strong emphasis on designing reliability techniques for radiation effects. My career goals include gaining expertise in radiation testing and advancing technology in space electronics.</p>
+                <a href="career-plan.html" class="btn-mono">Read More</a>
+            </div>
+        </main>
+        
+        <footer class="text-center mt-20 pt-10 border-t">
+            <p class="text-xs text-stone-400">&copy; 2024 HUSEYIN AMAC</p>
+            <div class="mt-4 flex justify-center space-x-4">
+                <a href="https://www.linkedin.com/in/huseyinamac" target="_blank" class="nav-link text-xs">LinkedIn</a>
+                <a href="https://github.iu.edu/hamac" target="_blank" class="nav-link text-xs">GitHub</a>
+                <a href="https://www.youtube.com/@amachuseyin" target="_blank" class="nav-link text-xs">YouTube</a>
+                <a href="mailto:hamac@iu.edu" class="nav-link text-xs">Email</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js" defer></script>
+    <script src="party-script.js" defer></script>
+</body>
+</html>

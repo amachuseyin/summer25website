@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huseyin Amac - Experience</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- This script runs immediately to set the theme and prevent transitions on load -->
+    <script>
+      (function() {
+        const theme = localStorage.getItem('theme') || 'light';
+        // Add the theme class ('light' or 'dark')
+        document.documentElement.classList.add(theme);
+        // Also add a class to disable transitions during load
+        document.documentElement.classList.add('no-transition');
+      })();
+    </script>
+</head>
+<body class="antialiased">
+
+    <div class="main-container">
+
+        <!-- Party Mode Toggle -->
+        <button id="party-mode-toggle" aria-label="Toggle party mode">
+            <div class="sphere">
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+        </button>
+
+        <!-- Theme Switcher Button -->
+        <button id="theme-switcher" aria-label="Toggle theme">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" /></svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" /></svg>
+        </button>
+
+        <!-- Header and Navigation -->
+        <header class="mb-16">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-stone-800">Huseyin Amac</h1>
+                <p class="text-lg mt-2 text-stone-500 font-sans">Intelligence Systems Engineering, B.S.</p>
+            </div>
+            <nav class="hidden md:flex items-center justify-center space-x-6 mt-12">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="experience.html" class="nav-link active">Experience</a>
+                <a href="skills.html" class="nav-link">Skills</a>
+                <a href="resume.html" class="nav-link">Resume</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+            </nav>
+            <div class="md:hidden text-center mt-8">
+                <button id="menu-btn" class="btn-mono">Menu</button>
+            </div>
+            <nav id="mobile-menu" class="hidden md:hidden mt-4 text-center space-y-2">
+                <a href="index.html" class="block py-2 nav-link">Home</a>
+                <a href="portfolio.html" class="block py-2 nav-link">Portfolio</a>
+                <a href="experience.html" class="block py-2 nav-link active">Experience</a>
+                <a href="skills.html" class="block py-2 nav-link">Skills</a>
+                <a href="resume.html" class="block py-2 nav-link">Resume</a>
+                <a href="blog.html" class="block py-2 nav-link">Blog</a>
+            </nav>
+        </header>
+
+        <!-- Main Content Area -->
+        <main>
+            <h2 class="section-heading">Experience</h2>
+            <div class="space-y-10">
+                <!-- Undergraduate Researcher -->
+                <div>
+                    <h3 class="text-xl font-bold text-stone-800">Undergraduate Researcher</h3>
+                    <p class="text-amber-700 text-sm">IU CREATE // June 2024 - Present</p>
+                    <ul class="list-disc list-inside mt-3 space-y-2 text-stone-500">
+                        <li>Chosen to participate in the prestigious & competitive SCALE program, focused on R&D in emerging semiconductor technology.</li>
+                        <li>Modeled and simulated single event effects in SkyWater 90nm tech. using industry-standard electronic design software (Cadence).</li>
+                        <li>Assisted in conducting a 25-hour radiation experiment at Lawrence Berkeley National Laboratory's 88-inch Cyclotron, applying research skills in a high-stakes environment.</li>
+                        <li>Gained experience in radiation testing, test planning, research, circuit design, simulation, data frames, and data visualization.</li>
+                    </ul>
+                </div>
+                <!-- Teaching Assistant -->
+                <div>
+                    <h3 class="text-xl font-bold text-stone-800">Teaching Assistant</h3>
+                    <p class="text-amber-700 text-sm">E-101, Innovation and Design // Jan 2024 - Present</p>
+                    <ul class="list-disc list-inside mt-3 space-y-2 text-stone-500">
+                        <li>Guiding 150 students through class curriculum, providing support in understanding course materials, assisting with assignments.</li>
+                        <li>Participating in collaborative learning to enhance the overall experience.</li>
+                        <li>Assisting in the evaluation of assignments, providing feedback, and contributing to course planning.</li>
+                    </ul>
+                </div>
+                <!-- Student Success Mentor -->
+                <div>
+                    <h3 class="text-xl font-bold text-stone-800">Student Success Mentor</h3>
+                    <p class="text-amber-700 text-sm">SPARC Team // Oct 2023 - Present</p>
+                    <ul class="list-disc list-inside mt-3 space-y-2 text-stone-500">
+                        <li>Guiding 150 students through understanding course materials.</li>
+                        <li>Participating in collaborative learning to enhance the overall experience.</li>
+                        <li>Assisting in the evaluation of assignments, providing feedback, and contributing to course planning.</li>
+                    </ul>
+                </div>
+                <!-- Certified Trainer -->
+                <div>
+                    <h3 class="text-xl font-bold text-stone-800">Certified Trainer</h3>
+                    <p class="text-amber-700 text-sm">Southern Rock Restaurants LLC // April 2022 - May 2024</p>
+                    <ul class="list-disc list-inside mt-3 space-y-2 text-stone-500">
+                        <li>Train and evaluate new team members on how to properly serve and cook with the company standards.</li>
+                        <li>Improved leadership, problem-solving, and communication skills.</li>
+                        <li>Trained 3 shift leaders and more than 30 team members across 3 brand-new stores around MI, OH, and IN.</li>
+                    </ul>
+                </div>
+                <!-- Social Media Marketing -->
+                <div>
+                    <h3 class="text-xl font-bold text-stone-800">Social Media Marketing</h3>
+                    <p class="text-amber-700 text-sm">Helteca Media // Aug 2021 - April 2022</p>
+                    <ul class="list-disc list-inside mt-3 space-y-2 text-stone-500">
+                        <li>Developed a digital doctor marketplace app where patients can be examined by medical providers.</li>
+                        <li>Worked in a team of three and learned how to manage the team and workflow.</li>
+                        <li>Reached 1750 organic followers from zero on Instagram within 2 months (October 2021).</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        
+        <!-- Footer -->
+        <footer class="text-center mt-20 pt-10 border-t">
+            <p class="text-xs text-stone-400">&copy; 2024 HUSEYIN AMAC</p>
+            <div class="mt-4 flex justify-center space-x-4">
+                <a href="https://www.linkedin.com/in/huseyinamac" target="_blank" class="nav-link text-xs">LinkedIn</a>
+                <a href="https://github.iu.edu/hamac" target="_blank" class="nav-link text-xs">GitHub</a>
+                <a href="https://www.youtube.com/@amachuseyin" target="_blank" class="nav-link text-xs">YouTube</a>
+                <a href="mailto:hamac@iu.edu" class="nav-link text-xs">Email</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js" defer></script>
+    <script src="party-script.js" defer></script>
+</body>
+</html>
